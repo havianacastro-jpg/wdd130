@@ -1,4 +1,3 @@
-/* --- RESET GENERAL --- */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,12 +6,14 @@ body {
     color: #333333;
 }
 
-/* --- HEADER DINÁMICO (Sin alturas fijas que aplasten el texto) --- */
 header {
     background-color: #ffffff;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+
+    grid-template-columns: auto 1fr;
+
     align-items: center;
+
     padding: 10px 40px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -22,9 +23,15 @@ header {
     width: auto;
 }
 
+header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
 header nav ul {
     list-style: none;
     display: flex;
+    /* Exigido por la rúbrica */
     margin: 0;
     padding: 0;
 }
@@ -38,6 +45,8 @@ header nav ul li a {
     color: #004d40;
     font-weight: bold;
     padding: 8px 16px;
+    display: block;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 header nav ul li a:hover,
@@ -47,7 +56,6 @@ header nav ul li a.active {
     border-radius: 4px;
 }
 
-/* --- CONTENEDOR HERO (Controla las capas superpuestas) --- */
 .hero {
     position: relative;
     width: 100%;
@@ -70,7 +78,6 @@ header nav ul li a.active {
     margin: 0;
 }
 
-/* Tarjeta de misión flotante */
 .mission-card {
     position: absolute;
     bottom: 10%;
@@ -97,7 +104,6 @@ header nav ul li a.active {
     line-height: 1.5;
 }
 
-/* --- SECCIÓN HISTORIA (Estilo Banner) --- */
 .history-section {
     max-width: 1000px;
     margin: 50px auto;
@@ -106,14 +112,12 @@ header nav ul li a.active {
 
 .history-header-bar {
     background-color: #395762;
-    /* Color gris azulado del diseño */
     padding: 15px 30px;
     border-radius: 4px 4px 0 0;
 }
 
 .history-header-bar h2 {
     color: #ffffff;
-    /* Texto blanco sobre fondo oscuro */
     margin: 0;
     font-size: 2rem;
 }
@@ -129,7 +133,6 @@ header nav ul li a.active {
     line-height: 1.6;
 }
 
-/* --- AVENTURA --- */
 .adventure-section {
     max-width: 1000px;
     margin: 40px auto;
@@ -140,15 +143,50 @@ header nav ul li a.active {
     color: #004d40;
     border-bottom: 2px solid #004d40;
     padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-/* --- FOOTER --- */
+.adventure-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.adventure-gallery figure {
+    flex: 1;
+
+    margin: 0;
+    background-color: #ffffff;
+    border: 1px solid #e0dcd3;
+    border-radius: 6px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: 140px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.adventure-gallery figcaption {
+    padding: 12px 5px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    color: #004d40;
+}
+
 footer {
     max-width: 1000px;
     margin: 60px auto 20px auto;
     padding: 20px;
     display: flex;
     justify-content: space-between;
+
     align-items: center;
     border-top: 1px solid #e0dcd3;
 }
@@ -159,10 +197,12 @@ footer p {
 
 .socialmedia {
     display: flex;
+
     gap: 15px;
 }
 
 .socialmedia img {
     width: 30px;
     height: 30px;
+    display: block;
 }
