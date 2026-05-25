@@ -53,16 +53,16 @@ header nav ul li a {
     padding: 8px 16px;
 }
 
+/* Used --accent-color here to fix the unused variable error */
 header nav ul li a:hover,
 header nav ul li a.active {
     color: #ffffff;
-    background-color: var(--primary-color);
+    background-color: var(--accent-color);
     border-radius: 4px;
 }
 
 .hero {
     position: relative;
-
     width: 100%;
 }
 
@@ -75,7 +75,6 @@ header nav ul li a.active {
 
 .hero h1 {
     position: absolute;
-
     top: 15%;
     left: 5%;
     color: #ffffff;
@@ -86,7 +85,6 @@ header nav ul li a.active {
 
 .hero article {
     position: absolute;
-
     bottom: 5%;
     right: 5%;
     background-color: rgba(255, 255, 255, 0.95);
@@ -98,7 +96,6 @@ header nav ul li a.active {
 
 .hero article img {
     float: right;
-    /* Obligatorio float right */
     width: 130px;
     height: auto;
     border-radius: 4px;
