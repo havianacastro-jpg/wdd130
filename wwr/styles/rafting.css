@@ -53,10 +53,15 @@ header nav ul li a {
     padding: 8px 16px;
 }
 
-/* Used --accent-color here to fix the unused variable error */
+/* ==========================================================================
+   CORRECCIÓN 1: Contraste en enlaces activos/hover
+   El texto blanco sobre el dorado (--accent-color) no tenía suficiente contraste.
+   Cambiamos el 'color' a oscuro (usando var(--text-color)) al pasar el mouse o estar activo.
+   ========================================================================== */
 header nav ul li a:hover,
 header nav ul li a.active {
-    color: #ffffff;
+    color: var(--text-color);
+    /* Cambiado de #ffffff a oscuro para cumplir WCAG AA (4.5:1) */
     background-color: var(--accent-color);
     border-radius: 4px;
 }
@@ -73,13 +78,24 @@ header nav ul li a.active {
     display: block;
 }
 
+/* ==========================================================================
+   CORRECCIÓN 2: Título Principal (.hero h1)
+   El validador detectaba que el texto blanco sobre el fondo beige claro general
+   no se leía. Al usar 'position: absolute' sobre la imagen (.hero-bg), para que 
+   el texto blanco sea 100% accesible y visible sobre cualquier imagen de fondo, 
+   añadimos un fondo oscuro semitransparente (rgba) que asegura el contraste.
+   ========================================================================== */
 .hero h1 {
     position: absolute;
     top: 15%;
     left: 5%;
     color: #ffffff;
     font-size: 3rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 77, 64, 0.85);
+    /* Fondo contenedor verde oscuro para proteger el texto blanco */
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin: 0;
 }
 
