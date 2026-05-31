@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | Dry Oar Rafting Co.</title>
     <meta name="description"
-      content="Contact Dry Oar Rafting Co. for inquiries, reservations, or website suggestions. We are here to help you plan your next rafting adventure.">
+      content="Contact Dry Oar Rafting Co. for inquiries, reservations, or website suggestions. We are here to help.">
     <meta name="author" content="Hagot Coriantumr Viana Castro">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -25,96 +25,103 @@
     </header>
 
     <main>
-        <h1 class="page-title">Contact Us</h1>
+        <h1 style="text-align: center; margin-top: 30px; color: var(--primary-color);">Contact Us
+        </h1>
 
-        <section class="company-info">
-            <h2>Our Location & Contact Info</h2>
-            <div class="info-grid">
-                <div class="address-card">
+        <section class="history-section">
+            <div class="history-header-bar">
+                <h2>Our Location & Contact Info</h2>
+            </div>
+            <div class="contact-container-layout">
+                <div class="contact-text-block">
                     <p><strong>Address:</strong> 123 River Run Lane, Canyon City, CO 81212</p>
                     <p><strong>Phone:</strong> +1 (555) 123-4567</p>
                     <p><strong>Email:</strong> info@dryoarrafting.com</p>
                 </div>
-                <div class="map-container">
+                <div class="contact-map-block">
                     <iframe
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.3441951557053!2d-105.2415124!3d38.4448556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDI2JzQxLjUiTiAxMDXCsDE0JzI5LjQiVw!5e0!3m2!1ses!2smx!4v1650000000000!5m2!1ses!2smx"
-                      width="600" height="450" allowfullscreen="" loading="lazy"
+                      width="100%" height="250" allowfullscreen="" loading="lazy"
                       referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </section>
 
-        <section class="team-section">
+        <section class="adventure-section">
             <h2>Meet Our Certified Guides</h2>
-            <div class="team-gallery">
+            <div class="adventure-gallery">
                 <figure>
                     <img src="images/happy-client.jpg"
                       alt="John Doe, Lead River Instructor smiling">
-                    <figcaption><strong>John Doe</strong> - Lead River Guide</figcaption>
+                    <figcaption><strong>John Doe</strong><br>Lead River Guide</figcaption>
                 </figure>
                 <figure>
                     <img src="images/happy-client.jpg"
                       alt="Jane Smith, Safety Coordinator holding gear">
-                    <figcaption><strong>Jane Smith</strong> - Safety Coordinator</figcaption>
+                    <figcaption><strong>Jane Smith</strong><br>Safety Coordinator</figcaption>
                 </figure>
                 <figure>
                     <img src="images/happy-client.jpg"
                       alt="Alex Wilson, Operations Manager by the river">
-                    <figcaption><strong>Alex Wilson</strong> - Operations Manager</figcaption>
+                    <figcaption><strong>Alex Wilson</strong><br>Operations Manager</figcaption>
                 </figure>
             </div>
         </section>
 
-        <section class="form-section">
-            <h2>Send Us a Message</h2>
-            <form action="#" method="post" class="contact-form">
+        <section class="history-section" style="margin-bottom: 50px;">
+            <div class="history-header-bar">
+                <h2>Send Us a Message</h2>
+            </div>
+            <div class="contact-form-container">
+                <form action="#" method="post" class="main-contact-form">
 
-                <div class="form-group">
-                    <label for="username">Full Name:</label>
-                    <input type="text" id="username" name="username" required
-                      placeholder="Enter your full name">
-                </div>
-
-                <div class="form-group">
-                    <label for="useremail">Email Address:</label>
-                    <input type="email" id="useremail" name="useremail" required
-                      placeholder="name@example.com">
-                </div>
-
-                <fieldset class="form-group">
-                    <legend>Purpose of Message:</legend>
-                    <div class="radio-option">
-                        <input type="radio" id="general" name="purpose" value="general" checked>
-                        <label for="general">General Inquiry</label>
+                    <div class="form-input-group">
+                        <label for="username">Full Name:</label>
+                        <input type="text" id="username" name="username" required
+                          placeholder="Enter your full name">
                     </div>
-                    <div class="radio-option">
-                        <input type="radio" id="reservation" name="purpose" value="reservation">
-                        <label for="reservation">Reservation Question</label>
+
+                    <div class="form-input-group">
+                        <label for="useremail">Email Address:</label>
+                        <input type="email" id="useremail" name="useremail" required
+                          placeholder="name@example.com">
                     </div>
-                    <div class="radio-option">
-                        <input type="radio" id="suggestion" name="purpose" value="suggestion">
-                        <label for="suggestion">Website Suggestion</label>
+
+                    <fieldset class="form-fieldset">
+                        <legend>Purpose of Message:</legend>
+                        <div class="form-radio-row">
+                            <input type="radio" id="general" name="purpose" value="general" checked>
+                            <label for="general">General Inquiry</label>
+                        </div>
+                        <div class="form-radio-row">
+                            <input type="radio" id="reservation" name="purpose" value="reservation">
+                            <label for="reservation">Reservation Question</label>
+                        </div>
+                        <div class="form-radio-row">
+                            <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                            <label for="suggestion">Website Suggestion</label>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-input-group">
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" rows="5" required
+                          placeholder="Write your question here..."></textarea>
                     </div>
-                </fieldset>
 
-                <div class="form-group">
-                    <label for="message">Your Message:</label>
-                    <textarea id="message" name="message" rows="6" required
-                      placeholder="Write your question or comment here..."></textarea>
-                </div>
+                    <div class="form-checkbox-row">
+                        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+                        <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                    </div>
 
-                <div class="form-group checkbox-group">
-                    <input type="checkbox" id="subscribe" name="subscribe" value="yes">
-                    <label for="subscribe">Please subscribe me to the monthly newsletter</label>
-                </div>
-
-                <button type="submit" class="submit-btn">Submit Message</button>
-            </form>
+                    <button type="submit" class="form-submit-btn">Submit Message</button>
+                </form>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Dry Oar Rafting Co. | Hagot Coriantumr Viana Castro</p>
+        <p>© 2026 Dry Oar Rafting Co. | Hagot Coriantumr Viana Castro</p>
         <nav class="socialmedia">
             <a href="https://facebook.com" target="_blank"><img src="images/facebook.svg"
                   alt="Facebook Icon"></a>
