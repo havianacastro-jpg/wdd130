@@ -1,50 +1,80 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hagot Coriantumr Viana Castro | WDD 130</title>
-
-
+    <title>Home | Dry Oar Rafting Co.</title>
     <meta name="description"
-      content="WDD 130 home page for Hagot Coriantumr Viana Castro, a language tutor and student in Mexico City showcasing web development projects.">
+      content="Welcome to Dry Oar Rafting Co. Discover the most exciting white water rafting adventures, top certified guides, and unforgettable river trips.">
     <meta name="author" content="Hagot Coriantumr Viana Castro">
-
-
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
     <header>
+        <img class="logo" src="images/logo.jpg" alt="Dry Oar Rafting Co. Logo">
         <nav>
-            <a href="index.html">Home</a>
-            <a href="wwr/index.html">Rafting Project</a>
-            <a href="wwr/site-plan-rafting.html">Site Plan</a>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <h1>Hagot Coriantumr Viana Castro</h1>
-        <!-- Nota: En el CSS cambiaremos el tamaño, por ahora quitamos el width="200" del HTML -->
-        <img src="images/profile.jpeg" alt="Hagot Viana Portrait">
+        <section class="history-section">
+            <div class="history-header-bar">
+                <h1>Welcome to Dry Oar Rafting Co.</h1>
+            </div>
+            <div class="history-content-layout">
+                <p>Get ready for the ultimate white water rafting experience! At Dry Oar Rafting
+                    Co., we specialize in taking you through the most beautiful canyons and
+                    thrilling rapids. Whether you are looking for a fun family day on the water or a
+                    challenging multi-day wilderness adventure, we have the perfect trip tailored
+                    for you.</p>
+                <p>Our world-class amenities, state-of-the-art equipment, and highly trained
+                    professional guides ensure that your safety and enjoyment are always our
+                    absolute top priorities. Explore our site to learn more about our team, check
+                    out our available trips, and book your next grand adventure today!</p>
+            </div>
+        </section>
 
-        <p>Hello! My name is Hagot. I live in Mexico City, and I am a language tutor and a web
-            development student. I am passionate about history, learning the violin, and traditional
-            Mexican music, especially classics like Pedro Infante.</p>
+        <section class="adventure-section">
+            <h2>Why Choose Dry Oar Rafting?</h2>
+            <div class="adventure-gallery">
+                <figure>
+                    <img src="images/adventure3.jpeg"
+                      alt="Family smiling together on a safe rafting boat">
+                    <figcaption><strong>Unmatched Safety</strong><br>Certified expert guides on
+                        every single trip.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/adventure1.jpeg" alt="Exciting white water rapid splash">
+                    <figcaption><strong>Thrilling Rapids</strong><br>Experience the best and most
+                        exciting river routes.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/adventure5.jpeg" alt="Beautiful canyon river sunset scenery">
+                    <figcaption><strong>Beautiful Landscapes</strong><br>Connect with raw nature and
+                        breathtaking canyon views.</figcaption>
+                </figure>
+            </div>
+        </section>
     </main>
 
-    <aside>
-        <h2>Mexico City</h2>
-        <img src="images/mexico.jpg" alt="The Angel of Independence in Mexico City">
-        <p>Mexico City is the capital of Mexico and one of the most populated cities in North
-            America. It is famous for its rich history, including the ancient Aztec ruins of
-            Tenochtitlan and its vibrant cultural scene, ranging from historic landmarks to modern
-            architecture.</p>
-    </aside>
-
     <footer>
-        <p>©2026 | Hagot Coriantumr Viana Castro | Mexico City, Mexico</p>
+        <p>© 2026 Dry Oar Rafting Co. | Hagot Coriantumr Viana Castro</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook.svg"
+                  alt="Facebook Icon"></a>
+            <a href="https://linkedin.com" target="_blank"><img src="images/linkedin.svg"
+                  alt="LinkedIn Icon"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.svg"
+                  alt="Instagram Icon"></a>
+        </nav>
     </footer>
 </body>
 
