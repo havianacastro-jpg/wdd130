@@ -132,3 +132,103 @@ footer p {
     height: 32px;
     display: inline-block;
 }
+
+.page-title {
+    text-align: center;
+    margin-top: 30px;
+    color: var(--primary-color);
+}
+
+.contact-form-section {
+    margin-bottom: 50px;
+}
+
+.contact-block-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.contact-text-data {
+    flex: 1;
+    min-width: 250px;
+}
+
+.contact-map-iframe {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-map-iframe iframe {
+    border: 1px solid #e0dcd3;
+    border-radius: 4px;
+    width: 100%;
+    display: block;
+}
+
+.form-wrapper {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.custom-contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-row {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input-row label {
+    font-weight: bold;
+}
+
+.input-row input,
+.input-row textarea {
+    padding: 10px;
+    border: 1px solid #c0bbb0;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+}
+
+.form-options {
+    border: 1px solid #c0bbb0;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.form-options legend {
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+.radio-option,
+.checkbox-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.submit-form-btn {
+    background-color: #004640;
+    color: #ffffff;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-form-btn:hover {
+    background-color: var(--secondary-color);
+}

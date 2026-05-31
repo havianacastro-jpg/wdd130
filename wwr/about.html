@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | Dry Oar Rafting Co.</title>
     <meta name="description"
-      content="Contact Dry Oar Rafting Co. for inquiries, reservations, or website suggestions. We are here to help.">
+      content="Contact Dry Oar Rafting Co. for inquiries, reservations, or website suggestions.">
     <meta name="author" content="Hagot Coriantumr Viana Castro">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -25,23 +25,22 @@
     </header>
 
     <main>
-        <h1 style="text-align: center; margin-top: 30px; color: var(--primary-color);">Contact Us
-        </h1>
+        <h1 class="page-title">Contact Us</h1>
 
         <section class="history-section">
             <div class="history-header-bar">
                 <h2>Our Location & Contact Info</h2>
             </div>
-            <div class="contact-container-layout">
-                <div class="contact-text-block">
+            <div class="contact-block-container">
+                <div class="contact-text-data">
                     <p><strong>Address:</strong> 123 River Run Lane, Canyon City, CO 81212</p>
                     <p><strong>Phone:</strong> +1 (555) 123-4567</p>
                     <p><strong>Email:</strong> info@dryoarrafting.com</p>
                 </div>
-                <div class="contact-map-block">
+                <div class="contact-map-iframe">
                     <iframe
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.3441951557053!2d-105.2415124!3d38.4448556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDI2JzQxLjUiTiAxMDXCsDE0JzI5LjQiVw!5e0!3m2!1ses!2smx!4v1650000000000!5m2!1ses!2smx"
-                      width="100%" height="250" allowfullscreen="" loading="lazy"
+                      width="400" height="250" allowfullscreen="" loading="lazy"
                       referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
@@ -68,53 +67,50 @@
             </div>
         </section>
 
-        <section class="history-section" style="margin-bottom: 50px;">
+        <section class="history-section contact-form-section">
             <div class="history-header-bar">
                 <h2>Send Us a Message</h2>
             </div>
-            <div class="contact-form-container">
-                <form action="#" method="post" class="main-contact-form">
+            <div class="form-wrapper">
+                <form action="#" method="post" class="custom-contact-form">
 
-                    <div class="form-input-group">
+                    <div class="input-row">
                         <label for="username">Full Name:</label>
-                        <input type="text" id="username" name="username" required
-                          placeholder="Enter your full name">
+                        <input type="text" id="username" name="username" required>
                     </div>
 
-                    <div class="form-input-group">
+                    <div class="input-row">
                         <label for="useremail">Email Address:</label>
-                        <input type="email" id="useremail" name="useremail" required
-                          placeholder="name@example.com">
+                        <input type="email" id="useremail" name="useremail" required>
                     </div>
 
-                    <fieldset class="form-fieldset">
+                    <fieldset class="form-options">
                         <legend>Purpose of Message:</legend>
-                        <div class="form-radio-row">
+                        <div class="radio-option">
                             <input type="radio" id="general" name="purpose" value="general" checked>
                             <label for="general">General Inquiry</label>
                         </div>
-                        <div class="form-radio-row">
+                        <div class="radio-option">
                             <input type="radio" id="reservation" name="purpose" value="reservation">
                             <label for="reservation">Reservation Question</label>
                         </div>
-                        <div class="form-radio-row">
+                        <div class="radio-option">
                             <input type="radio" id="suggestion" name="purpose" value="suggestion">
                             <label for="suggestion">Website Suggestion</label>
                         </div>
                     </fieldset>
 
-                    <div class="form-input-group">
+                    <div class="input-row">
                         <label for="message">Your Message:</label>
-                        <textarea id="message" name="message" rows="5" required
-                          placeholder="Write your question here..."></textarea>
+                        <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
 
-                    <div class="form-checkbox-row">
+                    <div class="checkbox-option">
                         <input type="checkbox" id="subscribe" name="subscribe" value="yes">
                         <label for="subscribe">Please subscribe me to the monthly newsletter</label>
                     </div>
 
-                    <button type="submit" class="form-submit-btn">Submit Message</button>
+                    <button type="submit" class="submit-form-btn">Submit Message</button>
                 </form>
             </div>
         </section>
