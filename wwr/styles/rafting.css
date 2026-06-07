@@ -1,3 +1,6 @@
+/* =======================================================
+   SEMANA 4: BASES GLOBALES Y RESTRUCTURACIÓN UNIVERSAL
+   ======================================================= */
 * {
     margin: 0;
     padding: 0;
@@ -133,6 +136,9 @@ footer p {
     display: inline-block;
 }
 
+/* =======================================================
+   SEMANA 5: AJUSTES DE CONTACTO (SINO DEFORMACIÓN FOOTER)
+   ======================================================= */
 .page-title {
     text-align: center;
     margin-top: 30px;
@@ -219,7 +225,7 @@ footer p {
 }
 
 .submit-form-btn {
-    background-color: #004640;
+    background-color: var(--primary-color);
     color: #ffffff;
     padding: 12px;
     border: none;
@@ -229,6 +235,259 @@ footer p {
     cursor: pointer;
 }
 
-.submit-form-btn:hover {
+/* =======================================================
+   SEMANA 6: ESTILOS DE HOME (INDEX) Y TRIPS (CSS GRID / HERO)
+   ======================================================= */
+
+/* Estilos del Hero Component con Position Absolute */
+.hero-container {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    background-color: rgba(0, 70, 64, 0.75);
+    padding: 15px 30px;
+    border-radius: 6px;
+    font-size: 2.5rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Call to Action Banner */
+.cta-banner,
+.trips-cta-banner {
     background-color: var(--secondary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 20px;
+    margin: 30px auto;
+    max-width: 900px;
+    border-radius: 6px;
+}
+
+.cta-banner p,
+.trips-cta-banner p {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.cta-button-link,
+.trips-cta-button {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    transition: transform 0.2s;
+}
+
+.cta-button-link:hover,
+.trips-cta-button:hover {
+    transform: scale(1.05);
+}
+
+/* Diseño CSS Grid Avanzado para Home */
+.home-grid-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 10px;
+}
+
+.grid-card {
+    background-color: #ffffff;
+    border: 1px solid #e0dcd3;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.text-card {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-card h2 {
+    color: var(--primary-color);
+    margin-bottom: 12px;
+}
+
+.img-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Newsletter Component */
+.newsletter-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 10px;
+}
+
+.newsletter-box {
+    background-color: #ffffff;
+    border: 2px solid var(--primary-color);
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.newsletter-box h2 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.newsletter-box p {
+    margin-bottom: 20px;
+    color: #555555;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 5px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.form-field label {
+    font-weight: bold;
+}
+
+.form-field input {
+    padding: 10px;
+    border: 1px solid #c0bbb0;
+    border-radius: 4px;
+}
+
+.newsletter-btn {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 11px 25px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Estilos Específicos de la Página de Trips */
+.trips-main-title {
+    text-align: center;
+    margin-top: 30px;
+    color: var(--primary-color);
+}
+
+.trips-container-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 10px;
+}
+
+.trip-card {
+    background-color: #ffffff;
+    border: 1px solid #e0dcd3;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.trip-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.trip-info {
+    padding: 20px;
+}
+
+.trip-info h2 {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.trip-info p {
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+/* Estilos de la Tabla de Comparación */
+.trips-table-section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 10px;
+}
+
+.trips-table-section h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border: 1px solid #e0dcd3;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0dcd3;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f8f4;
 }
