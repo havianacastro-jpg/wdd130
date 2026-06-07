@@ -63,57 +63,64 @@ header nav ul li a.active {
 }
 
 .mission-card {
-    background-color: rgba(255, 255, 255, 0.9);
-    max-width: 900px;
-    margin: -60px auto 40px auto;
-
-    padding: 30px;
-    border: 1px solid #e0dcd3;
-    border-radius: 8px;
-    position: relative;
-    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    max-width: 900px !important;
+    margin: 20px auto !important;
+    padding: 30px !important;
+    border: 1px solid #e0dcd3 !important;
+    border-radius: 8px !important;
+    display: block !important;
 }
 
 .mission-header-inline {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    margin-bottom: 25px;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 20px !important;
+    margin-bottom: 25px !important;
+    width: 100% !important;
 }
 
 .mission-main-logo {
-    width: 90px;
-    height: auto;
+    width: 100px !important;
+    height: auto !important;
+    display: block !important;
 }
 
 .hero-title {
-    color: var(--primary-color);
-    font-size: 2.2rem;
+    color: var(--primary-color) !important;
+    font-size: 2.2rem !important;
+    margin: 0 !important;
 }
 
 .mission-content-inline {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    flex-wrap: wrap;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 30px !important;
+    flex-wrap: nowrap !important;
 
+    width: 100% !important;
 }
 
 .client-img {
-    width: 220px;
-    height: auto;
-    border-radius: 4px;
-    display: block;
+    width: 220px !important;
+    height: auto !important;
+    display: block !important;
+    flex-shrink: 0 !important;
+
 }
 
 .mission-text-box {
-    flex: 1;
-    min-width: 280px;
+    flex: 1 !important;
+    display: block !important;
 }
 
 .mission-text-box p {
-    line-height: 1.6;
-    color: var(--text-color);
+    line-height: 1.6 !important;
+    color: var(--text-color) !important;
+    margin: 0 !important;
+    text-align: left !important;
 }
 
 .history-section,
