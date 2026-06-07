@@ -63,10 +63,12 @@ header nav ul li a.active {
 }
 
 .mission-card {
-    background-color: rgba(255, 255, 255, 0.9) !important;
-    max-width: 900px !important;
-    margin: 20px auto !important;
-    padding: 30px !important;
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    max-width: 800px !important;
+
+    margin: 30px auto !important;
+    padding: 20px !important;
+
     border: 1px solid #e0dcd3 !important;
     border-radius: 8px !important;
     display: block !important;
@@ -76,20 +78,22 @@ header nav ul li a.active {
     display: flex !important;
     flex-direction: row !important;
     align-items: center !important;
-    gap: 20px !important;
-    margin-bottom: 25px !important;
+    gap: 15px !important;
+    margin-bottom: 20px !important;
     width: 100% !important;
 }
 
 .mission-main-logo {
-    width: 100px !important;
+    width: 70px !important;
+    /* Achicado de 100px a 70px */
     height: auto !important;
     display: block !important;
 }
 
 .hero-title {
     color: var(--primary-color) !important;
-    font-size: 2.2rem !important;
+    font-size: 1.8rem !important;
+
     margin: 0 !important;
 }
 
@@ -97,14 +101,15 @@ header nav ul li a.active {
     display: flex !important;
     flex-direction: row !important;
     align-items: center !important;
-    gap: 30px !important;
+    gap: 20px !important;
     flex-wrap: nowrap !important;
 
     width: 100% !important;
 }
 
 .client-img {
-    width: 220px !important;
+    width: 160px !important;
+
     height: auto !important;
     display: block !important;
     flex-shrink: 0 !important;
@@ -117,7 +122,9 @@ header nav ul li a.active {
 }
 
 .mission-text-box p {
-    line-height: 1.6 !important;
+    font-size: 0.95rem !important;
+
+    line-height: 1.5 !important;
     color: var(--text-color) !important;
     margin: 0 !important;
     text-align: left !important;
