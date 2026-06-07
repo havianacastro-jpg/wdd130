@@ -51,6 +51,71 @@ header nav ul li a.active {
     border-radius: 4px;
 }
 
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero-bg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.mission-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    max-width: 900px;
+    margin: -60px auto 40px auto;
+
+    padding: 30px;
+    border: 1px solid #e0dcd3;
+    border-radius: 8px;
+    position: relative;
+    z-index: 10;
+}
+
+.mission-header-inline {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.mission-main-logo {
+    width: 90px;
+    height: auto;
+}
+
+.hero-title {
+    color: var(--primary-color);
+    font-size: 2.2rem;
+}
+
+.mission-content-inline {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+
+}
+
+.client-img {
+    width: 220px;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+}
+
+.mission-text-box {
+    flex: 1;
+    min-width: 280px;
+}
+
+.mission-text-box p {
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
 .history-section,
 .adventure-section {
     max-width: 900px;
