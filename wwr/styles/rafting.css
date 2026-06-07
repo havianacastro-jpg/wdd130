@@ -1,6 +1,3 @@
-/* =======================================================
-   SEMANA 4: BASES GLOBALES Y RESTRUCTURACIÓN UNIVERSAL
-   ======================================================= */
 * {
     margin: 0;
     padding: 0;
@@ -136,9 +133,6 @@ footer p {
     display: inline-block;
 }
 
-/* =======================================================
-   SEMANA 5: AJUSTES DE CONTACTO (SINO DEFORMACIÓN FOOTER)
-   ======================================================= */
 .page-title {
     text-align: center;
     margin-top: 30px;
@@ -235,11 +229,6 @@ footer p {
     cursor: pointer;
 }
 
-/* =======================================================
-   SEMANA 6: ESTILOS DE HOME (INDEX) Y TRIPS (CSS GRID / HERO)
-   ======================================================= */
-
-/* Estilos del Hero Component con Position Absolute */
 .hero-container {
     position: relative;
     width: 100%;
@@ -268,7 +257,6 @@ footer p {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* Call to Action Banner */
 .cta-banner,
 .trips-cta-banner {
     background-color: var(--secondary-color);
@@ -304,7 +292,6 @@ footer p {
     transform: scale(1.05);
 }
 
-/* Diseño CSS Grid Avanzado para Home */
 .home-grid-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -340,7 +327,6 @@ footer p {
     display: block;
 }
 
-/* Newsletter Component */
 .newsletter-section {
     max-width: 900px;
     margin: 40px auto;
@@ -403,7 +389,6 @@ footer p {
     cursor: pointer;
 }
 
-/* Estilos Específicos de la Página de Trips */
 .trips-main-title {
     text-align: center;
     margin-top: 30px;
@@ -449,7 +434,6 @@ footer p {
     font-size: 0.95rem;
 }
 
-/* Estilos de la Tabla de Comparación */
 .trips-table-section {
     max-width: 900px;
     margin: 50px auto;
